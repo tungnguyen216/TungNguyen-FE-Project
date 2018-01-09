@@ -26,7 +26,7 @@ export default class Home {
 
       $.each(allSkills, function (index, skill) {
         if (!skillCounter.length) {
-          var newSkill = {[skill]: 1}
+          let newSkill = {[skill]: 1}
           skillCounter.push(newSkill);
         } else {
           var isExist = false;
@@ -40,7 +40,7 @@ export default class Home {
           })
 
           if (!isExist) {
-            var newSkill = {[skill]: 1}
+            let newSkill = {[skill]: 1}
             skillCounter.push(newSkill);
           }
         }
@@ -283,6 +283,7 @@ export default class Home {
           }
         })
 
+        skillChart();
       })
     }
 

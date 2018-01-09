@@ -15825,8 +15825,8 @@
 	            });
 
 	            if (!isExist) {
-	              var newSkill = _defineProperty({}, skill, 1);
-	              skillCounter.push(newSkill);
+	              var _newSkill2 = _defineProperty({}, skill, 1);
+	              skillCounter.push(_newSkill2);
 	            }
 	          }
 	          total++;
@@ -16056,6 +16056,8 @@
 	              return true;
 	            }
 	          });
+
+	          skillChart();
 	        });
 	      };
 
