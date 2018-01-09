@@ -1,0 +1,11 @@
+extends tmpl/layout/layout.pug
+
+block content
+  .my-container
+      h2.heading-title Dashboard
+      section.section-wrapper.section-wrapper--flex
+          .column-left
+              include tmpl/components/user-list
+              include tmpl/components/video
+          .column-right
+              include tmpl/components/chart

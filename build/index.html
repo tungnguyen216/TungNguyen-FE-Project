@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TungNguyen-FE-Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="favicon.ico"><!-- build:css assets/css/ekino.min.css -->
+<!-- inject:css -->
+<link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+<!-- endinject -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/app.css"><!-- endbuild -->
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="my-container">
+        <section class="section-wrapper section-wrapper--flex">
+          <h1 class="logo">COMPANY LOGO</h1>
+        </section>
+      </div>
+    </header>
+    <main class="main-page">
+      <div class="my-container">
+        <h2 class="heading-title">Dashboard</h2>
+        <section class="section-wrapper section-wrapper--flex">
+          <div class="column-left">
+            <div class="user-list">
+              <header class="component-header user-list__header">
+                <div class="user-list__header__title"><span>Data user</span></div>
+                <div class="user-list__header__actions">
+                  <button class="user-list__header__actions__add-btn" type="button" data-toggle="modal" data-target="#user_modal"><i class="glyphicon glyphicon-plus"></i></button>
+                  <div class="user-lis__header__actions__search">
+                    <button type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    <input type="text" name="filter_user_email">
+                  </div>
+                </div>
+              </header>
+              <main class="table-responsive user-list__content">
+                <table class="table user-list__content__table">
+                  <thead> 
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Skills</th>
+                      <th>Gender</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </main>
+              <footer class="user-list__footer"></footer>
+            </div>
+            <div class="video">
+              <header class="component-header video__header"><span>Video</span></header>
+              <main class="video__content">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/X8MqDH9uqhg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+              </main>
+            </div>
+          </div>
+          <div class="column-right">
+            <div class="skill-chart">
+              <header class="component-header skill-chart__header"><span>Skill chart</span></header>
+              <main class="skill-chart__content">
+                <div class="skill-chart__chart" id="skill_chart"></div>
+              </main>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="modal fade" id="user_modal" role="dialog">
+        <div class="modal-dialog">
+          <div class="user-form">
+            <header class="component-header user-form__header">
+              <div class="user-form__header__title"><span>Update your profile</span></div>
+              <div class="user-form__header__close-btn" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></div>
+            </header>
+            <main class="user-form__content">
+              <form name="user_form" id="user_form">
+                <div class="user-form__group">
+                  <label class="user-form__label">User name</label>
+                  <input class="user-form__txt" type="text" name="user_name"><span class="user-form__valid"><i class="glyphicon glyphicon-ok"></i></span><span class="user-form__error"><i class="glyphicon glyphicon-remove"></i></span>
+                </div>
+                <div class="user-form__group">
+                  <label class="user-form__label">Email</label>
+                  <input class="user-form__txt" type="email" name="user_email"><span class="user-form__valid"><i class="glyphicon glyphicon-ok"></i></span><span class="user-form__error"><i class="glyphicon glyphicon-remove"></i></span>
+                </div>
+                <div class="user-form__group">
+                  <label class="user-form__label">Website</label>
+                  <input class="user-form__txt" type="text" name="user_website"><span class="user-form__valid"><i class="glyphicon glyphicon-ok"></i></span><span class="user-form__error"><i class="glyphicon glyphicon-remove"></i></span>
+                </div>
+                <div class="user-form__group">
+                  <label class="user-form__label">Skills</label>
+                  <div class="user-form__txt skill-results">
+                    <div class="skill-results__board"></div>
+                    <div class="skill-results__arrow"><i class="glyphicon glyphicon-triangle-bottom"></i></div>
+                    <ul class="skill-list">
+                      <li class="skill-elm"><span>html</span></li>
+                      <li class="skill-elm"><span>css</span></li>
+                      <li class="skill-elm"><span>jquery</span></li>
+                      <li class="skill-elm"><span>python</span></li>
+                      <li class="skill-elm"><span>php</span></li>
+                    </ul>
+                  </div>
+                  <input class="user-form__hidden" type="text" name="user_skills"><span class="user-form__valid"><i class="glyphicon glyphicon-ok"></i></span><span class="user-form__error"><i class="glyphicon glyphicon-remove"></i></span>
+                </div>
+                <div class="user-form__group">
+                  <label class="user-form__label">Gender</label>
+                  <div class="user-form__radio-elm">
+                    <input type="radio" name="user_gender" value="male" checked>
+                    <label>Male</label>
+                  </div>
+                  <div class="user-form__radio-elm">
+                    <input type="radio" name="user_gender" value="female">
+                    <label>Female</label>
+                  </div>
+                </div>
+                <div class="user-form__progress-bar"><span class="user-form__progress-bar__stick"></span></div>
+                <div class="user-form__submit">
+                  <button type="button">Save</button>
+                </div>
+              </form>
+            </main>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer"></footer><!-- build:js app/ekino.min.js -->
+<!-- dependencies START -->
+<!-- inject:js -->
+<script src="node_modules/wowjs/dist/wow.min.js"></script>
+<!-- endinject -->
+<!-- CORE START -->
+    <script src="assets/js/app.js"></script><!-- CORE END -->
+<!-- endbuild -->
+  </body>
+</html>

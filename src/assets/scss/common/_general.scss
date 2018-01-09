@@ -1,0 +1,97 @@
+@include font-face('OpenSans-Light', 'OpenSans-Light', normal, normal);
+$opensans: 'OpenSans-Light', arial, sans-serif;
+@include font-face('OpenSans-Bold', 'OpenSans-Bold', normal, normal);
+$opensans-bold: 'OpenSans-Bold', arial, sans-serif;
+
+body {
+  color: $black;
+  font-family: $opensans;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-page {
+  background-color: $grey;
+}
+
+.my-container {
+  padding: 0 15px;
+  width: 100%;
+
+  @include bp(desktop) {
+    margin: 0 auto;
+    width: 1170px;
+  }
+}
+
+.heading-title {
+    padding: 25px 0;
+    font-size: 28px;
+}
+
+.section-wrapper {
+  width: 100%;
+
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.column-left {
+  width: 100%;
+
+  @include bp(desktop) {
+    width: 70%;
+  }
+}
+
+.column-right {
+  width: 100%;
+
+  @include bp(desktop) {
+    padding-left: 25px;
+    width: 30%;
+  }
+}
+
+.component-header {
+  display: flex;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background: $yellow;
+  padding: 0 15px;
+  height: 40px;
+  color: $white;
+  font-family: $opensans-bold;
+}

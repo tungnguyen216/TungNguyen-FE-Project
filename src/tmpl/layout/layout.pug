@@ -1,0 +1,17 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  include ./head
+
+  body
+    header.main-header
+        include ../common/header
+    main.main-page
+        block content
+        section.modal.fade(id='user_modal',  role='dialog')
+            .modal-dialog
+                include ../components/user-form
+    footer.main-footer
+        include ../common/footer
+    
+    include ./scripts

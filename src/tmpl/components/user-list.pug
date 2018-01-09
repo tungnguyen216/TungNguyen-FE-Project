@@ -1,0 +1,37 @@
+.user-list
+    header.component-header.user-list__header
+        .user-list__header__title
+            span Data user
+        .user-list__header__actions
+            button.user-list__header__actions__add-btn(type='button', data-toggle='modal', data-target='#user_modal')
+                i.glyphicon.glyphicon-plus
+            .user-lis__header__actions__search
+                button(type='button')
+                    i.glyphicon.glyphicon-search
+                input(type='text', name='filter_user_email')
+    main.table-responsive.user-list__content
+        table.table.user-list__content__table
+            thead 
+                tr
+                    th Name
+                    th Email
+                    th Skills
+                    th Gender
+                    th 
+            tbody
+                //- tr
+                //-     td.__name Elizabeth Gilbert
+                //-     td.__email e.gilbert@gmail.com
+                //-     td.__skills 
+                //-         i.glyphicon.glyphicon-signal
+                //-     td.__gender Male
+                //-     td.__action
+                //-         button.__action__edit
+                //-             i.glyphicon.glyphicon-edit 
+                //-             span Edit
+                //-         button.__action__delete
+                //-             i.glyphicon.glyphicon-trash 
+                //-             span Delete
+                    
+    footer.user-list__footer
+  

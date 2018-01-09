@@ -1,0 +1,62 @@
+{
+    "base": {
+        "src": "src/",
+        "build": "build/",
+        "compile": "compile/",
+        "test": "test/",
+        "vendor": "vendor/",
+        "tmp": ".tmp/",
+        "dist": "dist/"
+    },
+    "path": {
+        "sass": "assets/scss/",
+        "css": "assets/css/",
+        "images": "assets/img/",
+        "videos": "assets/videos/",
+        "pdf": "assets/pdf/",
+        "fonts": "assets/fonts/",
+        "js": "assets/js/",
+        "root": "root/"
+    },
+    "files": {
+        "index": "index.html",
+        "pugindex": "index.pug",
+        "html": "**/*.html",
+        "pug": "**/*.pug",
+        "tmpl": "**/*.tmpl",
+        "sass": "app.scss",
+        "sassAll": "**/*.scss",
+        "css": "**/*.css",
+        "js": "**/*.js",
+        "ts": "**/*.ts",
+        "fonts": "**",
+        "images": "{,*/,*/*/}*.{png,jpg,jpeg,gif}",
+        "videos": "**/*.{mp4,webm}",
+        "pdf": "**",
+        "root": "**",
+        "hidden": ".**"
+    },
+    "vendor":{
+        "jsCss": [
+          "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+          "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+          "node_modules/animate.css/animate.min.css",
+          "node_modules/slick-carousel/slick/slick-theme.css",
+          "node_modules/slick-carousel/slick/slick.css",
+          "node_modules/hammerjs/hammer.js",
+          "node_modules/wowjs/dist/wow.min.js"
+        ],
+        "assets": [
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.tts",
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+          "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+          "node_modules/slick-carousel/slick/fonts/slick.eot",
+          "node_modules/slick-carousel/slick/fonts/slick.svg",
+          "node_modules/slick-carousel/slick/fonts/slick.ttf",
+          "node_modules/slick-carousel/slick/fonts/slick.woff"
+      ]
+    }
+}

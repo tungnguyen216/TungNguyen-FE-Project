@@ -1,0 +1,259 @@
+.user-list {
+  display: bock;
+  border-radius: 5px;
+  background: $white;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.user-list__header__title {
+    flex-grow: 2;
+}
+
+.user-list__header__actions {
+  display: flex;
+}
+
+.user-list__header__actions__add-btn,
+.user-lis__header__actions__search {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  background: $white-ap-40;
+  margin-right: 10px;
+}
+
+.user-lis__header__actions__search {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  height: 26px;
+
+  input,
+  button {
+    border: 0;
+    background: none;
+    height: 30px;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.user-list__content__table {
+  margin-bottom: 0;
+
+  > tbody > tr {
+    > td {
+      vertical-align: middle;
+    }
+  }
+
+
+  th:first-child,
+  td:first-child {
+    padding-left: 15px;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 15px;
+  }
+
+  .__action {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .__action__edit,
+  .__action__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 26px;
+    color: $white;
+    font-size: 1.2rem;
+
+    .glyphicon {
+      display: inline-block;
+      top: 0;
+      margin-right: 3px;
+    }
+  }
+
+  .__action__edit {
+    background-color: $blue;
+    margin-right: 10px;
+  }
+
+  .__action__delete {
+    background-color: $red;
+  }
+}
+
+//User form
+.user-form {
+  border-radius: 5px;
+  background: $white;
+  overflow: hidden;
+}
+
+.user-form__header__title {
+  flex-grow: 2;
+}
+
+.user-form__header__close-btn {
+  cursor: pointer;
+}
+
+.user-form__content {
+  padding: 60px 85px;
+}
+
+.user-form__group {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-form__label {
+  width: 35%;
+}
+
+.user-form__txt {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border: 1px solid $dark-grey;
+  border-radius: 3px;
+  background: $grey;
+  padding: 5px 15px;
+  width: 65%;
+  min-height: 35px;
+}
+
+.user-form__hidden {
+  display: none;
+}
+
+.skill-results {
+  position: relative;
+  cursor: pointer;
+}
+
+.skill-results__arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.skill-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 0 0 3px 3px;
+  background: $yellow-ap-80;
+  width: 100%;
+  z-index: 9;
+}
+
+.skill-elm {
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.skill-results__board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-elm__name {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background: $yellow;
+  margin: 2px;
+  padding: 0 7px;
+  height: 21px;
+  color: $white;
+  line-height: 0;
+}
+
+.skill-elm__remove-btn {
+  margin-left: 3px;
+  cursor: pointer;
+  font-size: 9px;
+}
+
+.user-form__valid,
+.user-form__error {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: $white;
+  padding-top: 4px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  color: $green;
+  font-size: 11px;
+}
+
+.user-form__error {
+  color: $red;
+}
+
+.user-form__radio-elm {
+  display: flex;
+  margin-right: 40px;
+
+  input {
+    margin-right: 5px;
+  }
+}
+
+.user-form__submit {
+  display: flex;
+  justify-content: center;
+
+  button {
+    border: none;
+    border-radius: 3px;
+    background: $yellow;
+    padding: 5px 10px;
+    min-width: 120px;
+    color: $white;
+    font-family: $opensans-bold;
+  }
+}
+
+.user-form__progress-bar {
+  display: flex;
+  position: relative;
+  border-radius: 3px;
+  background: $grey;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+
+  &__stick {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: .3s;
+    background: $green;
+    width: 100%;
+    height: 10px;
+  }
+}

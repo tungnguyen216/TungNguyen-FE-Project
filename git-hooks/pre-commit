@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Start gulp compile"
+gulp compile
+echo "Gulp compile finished"

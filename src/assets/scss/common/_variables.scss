@@ -1,0 +1,36 @@
+/* ==============================variables=================================== */
+/**
+ * custom variables definition
+ */
+$white: #fff;
+$white-ap-40: rgba(255, 255, 255, .4);
+$black: #333;
+$real-black: #000;
+$grey: #ebebeb;
+$dark-grey: #949fb1;
+$darker-grey: #4d5361;
+
+$yellow: #ffc525;
+$yellow-ap-80: rgba(255, 197, 37, .8);
+$orange: #feb45d;
+$blue: #56b5e5;
+$green: #78cb35;
+$red: #d63a2d;
+
+
+/**
+ * Bootstrap Variable overload from the vendor
+ * /vendor/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ * Overloading MUST BE USED IN PRIORITY before overriding
+ */
+
+//Avoid collapsing the navbar
+$grid-float-breakpoint: 0;
+
+$icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+$navbar-default-bg: transparent;

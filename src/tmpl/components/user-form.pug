@@ -1,0 +1,63 @@
+.user-form
+    header.component-header.user-form__header
+        .user-form__header__title
+            span Update your profile
+        .user-form__header__close-btn(data-dismiss='modal')
+            i.glyphicon.glyphicon-remove
+    main.user-form__content
+        form(name='user_form', id='user_form')
+            .user-form__group
+                label.user-form__label User name
+                input.user-form__txt(type='text', name='user_name')
+                span.user-form__valid
+                  i.glyphicon.glyphicon-ok
+                span.user-form__error
+                  i.glyphicon.glyphicon-remove
+            .user-form__group
+                label.user-form__label Email
+                input.user-form__txt(type='email', name='user_email')
+                span.user-form__valid
+                  i.glyphicon.glyphicon-ok
+                span.user-form__error
+                  i.glyphicon.glyphicon-remove
+            .user-form__group
+                label.user-form__label Website
+                input.user-form__txt(type='text', name='user_website')
+                span.user-form__valid
+                  i.glyphicon.glyphicon-ok
+                span.user-form__error
+                  i.glyphicon.glyphicon-remove
+            .user-form__group
+                label.user-form__label Skills
+                .user-form__txt.skill-results
+                    .skill-results__board
+                    .skill-results__arrow
+                        i.glyphicon.glyphicon-triangle-bottom
+                    ul.skill-list
+                        li.skill-elm
+                            span html
+                        li.skill-elm
+                            span css
+                        li.skill-elm
+                            span jquery
+                        li.skill-elm
+                            span python
+                        li.skill-elm
+                            span php
+                input.user-form__hidden(type='text', name='user_skills')
+                span.user-form__valid
+                  i.glyphicon.glyphicon-ok
+                span.user-form__error
+                  i.glyphicon.glyphicon-remove
+            .user-form__group
+                label.user-form__label Gender
+                .user-form__radio-elm
+                    input(type='radio', name='user_gender', value='male', checked)
+                    label Male
+                .user-form__radio-elm
+                    input(type='radio', name='user_gender', value='female')
+                    label Female
+            .user-form__progress-bar
+                span.user-form__progress-bar__stick
+            .user-form__submit
+                button(type='button') Save
